@@ -6,7 +6,8 @@ import "./registerServiceWorker";
 import "amfe-flexible";
 import Cube from 'cube-ui';
 import axios from  'axios';
-
+import setAxios from "./setsxios";
+setAxios();
 Vue.config.productionTip = false;
 Vue.prototype.$http=axios;
 Vue.use(Cube) //使用cube-ui

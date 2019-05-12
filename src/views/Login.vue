@@ -61,21 +61,36 @@ export default {
           },
           {
             type: "submit",
-            label: "提交"
+            label: "登录"
           }
         ]
       }
     };
   },
   methods: {
-    submitHandler(e) {
+    // submitHandler(e) {
+    //   e.preventDefault();
+    //   this.$http.get('/api/login',{params:this.model}).then(l=>{
+    //       console.log(l);
+    //   })
+    // }
+    async submitHandler(e) {
       e.preventDefault();
-      // console.log(this.model)
-      this.$http.get("/api/register", { params: this.model }).then(l => {
-        console.log(l);
-      }).catch((err)=>{
-          console.log(err)
-      });
+      try {
+        const result = await this.$http.get("./api/login", {
+          params: this.model
+        });
+        if (result.code === 0) {
+          this.$store.commit("setToken", result.token);
+          window.localStorage.setItem("token", result.token);
+          alert("登陆成功");
+        } else {
+          alert("登录失败");
+        }
+       // console.log(result.data.token);
+      } catch (err) {
+        // console.log(err);
+      }
     }
   }
 };

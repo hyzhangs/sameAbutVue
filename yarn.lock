@@ -1121,6 +1121,11 @@
   resolved "https://registry.npm.taobao.org/@xtuc/long/download/@xtuc/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
   integrity sha1-XIXWYvdvodNFdXZsXc1mFavNMNg=
 
+Router@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/Router/-/Router-2.1.0.tgz#52e4298a91645d45b33167648ae0cf386c84d6e4"
+  integrity sha1-UuQpipFkXUWzMWdkiuDPOGyE1uQ=
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/abbrev/download/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

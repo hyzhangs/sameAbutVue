@@ -4,7 +4,17 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {}
+  state: {
+    token:''
+  },
+  mutations: {
+    setToken(state,token){
+      // 设置vuex token
+      state.token = token
+    }
+  },
+  actions: {},
+  getters:{
+
+  }
 });

@@ -21,24 +21,41 @@ module.exports = {
               message: '注册成功'
             })
           }
+        });
+        // 登录接口
+        let tokenKey = 'hyzhangclass'
+        app.get('/api/login', (req, res) => {
+          const { username, password } = req.query;
+          if ((username == 'xiad' && password == "123456") || (username == 'time' && password == "123456") ) {
+            res.json({
+              code: 0,
+              message: "登陆成功",
+              token: tokenKey + '-' + username + '-' + (new Date().getTime() + 60 * 60 * 1000)
+            })
+      }else {
+        res.json({
+          code: 1,
+          message: "账号或密码错误"
         })
       }
-    }
+    })
+  }
+}
   },
-  css: {
-    loaderOptions: {
-      stylus: {
-        'resolve url': true,
+css: {
+  loaderOptions: {
+    stylus: {
+      'resolve url': true,
         'import': [
           './src/theme'
         ]
-      }
-    }
-  },
-  pluginOptions: {
-    'cube-ui': {
-      postCompile: true,
-      theme: true
     }
   }
+},
+pluginOptions: {
+  'cube-ui': {
+    postCompile: true,
+      theme: true
+  }
+}
 }
