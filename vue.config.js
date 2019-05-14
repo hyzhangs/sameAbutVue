@@ -65,104 +65,104 @@ module.exports = {
           [
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
                {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/learn.png',
+                image: 'http://pic.51yuansu.com/pic2/cover/00/30/43/58107fc32de56_610.jpg',
                 label:'分类一'
             },
           ],
           [
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
              {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
             {
                 url: 'https://m.xdclass.net',
-                image: 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/xdclass_pro/bannner/1901/bat.png',
+                image: 'http://img.mp.itc.cn/upload/20161118/2e35f4043d574840a761801d1fe8c82d_th.png',
                 label:'分类一'
             },
           ],

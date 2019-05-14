@@ -83,7 +83,8 @@ export default {
         if (result.code === 0) {
           this.$store.commit("setToken", result.token);
           window.localStorage.setItem("token", result.token);
-          alert("登陆成功");
+         //  alert("登陆成功");
+         this.$router.replace({path:'/index'});
         } else {
           alert("登录失败");
         }

@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Register from './views/Register.vue';
-import  Login from "./views/Login.vue";
 
 Vue.use(Router);
 
@@ -31,6 +30,38 @@ export default new Router({
       path: "/index",
       name: "index",
       component: () => import(/* webpackChunkName: "about" */ "./views/index.vue")
+    },
+    {
+      path: "/tabbar",
+      name: "tabbar",
+      component: () => import(/* webpackChunkName: "about" */ "./views/TabBar.vue"),
+      children:[
+        {
+          path: "index",
+          name: "index",
+          component: () => import(/* webpackChunkName: "about" */ "./views/index.vue")
+        },
+        {
+          path: "list",
+          name: "list",
+          component: () => import(/* webpackChunkName: "about" */ "./views/List.vue")
+        },
+        {
+          path: "search",
+          name: "search",
+          component: () => import(/* webpackChunkName: "about" */ "./views/Search.vue")
+        },
+        {
+          path: "shopcar",
+          name: "shopcar",
+          component: () => import(/* webpackChunkName: "about" */ "./views/Shopcar.vue")
+        },
+        {
+          path: "my",
+          name: "my",
+          component: () => import(/* webpackChunkName: "about" */ "./views/my.vue")
+        },
+      ]
     }
   ]
 });
