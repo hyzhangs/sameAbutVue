@@ -1,20 +1,22 @@
 <template>
-<div>
-  <router-view/>
+  <div>
+    <transition :name="transitionName" >
+      <router-view class="Router"/>
+    </transition>
     <cube-tab-bar
-    v-model="selectedLabelDefault"
-    :data="tabs"
-    @click="clickHandler"
-    @change="changeHandler"
-    class="bottom-bar"
-  ></cube-tab-bar>
-</div>
-
+      v-model="selectedLabelDefault"
+      :data="tabs"
+      @click="clickHandler"
+      @change="changeHandler"
+      class="bottom-bar"
+    ></cube-tab-bar>
+  </div>
 </template>
 <script>
 export default {
   data() {
     return {
+      transitionName: "silde-right",
       selectedLabelDefault: "首页",
       tabs: [
         {
@@ -59,12 +61,10 @@ export default {
           break;
         case "购物车":
           this.$router.push({ path: "/tabbar/shopcar" });
-          break
+          break;
         case "我的":
           this.$router.push({ path: "/tabbar/my" });
-          break
-
-
+          break;
       }
       // if you clicked different tab, this methods can be emitted
     }
@@ -72,13 +72,24 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-.bottom-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-  background: #fff;
-}
+  .bottom-bar
+    position: fixed
+    bottom: 0
+    left: 0
+    z-index: 1000
+    width: 100%
+    background: #fff
+  .Router
+    position absolute
+    width 100%
+    transition all 0.8s ease
+  .silde-left-enter, .silde-right-leave-active
+    opacity 0
+    -webkit-transform translate(100%,0)
+    transform translate(100%,0)
+  .silde-left-leave-active, silde-right-enter
+    opacity 0
+    -webkit-transform translate(-100%,0)
+    transform translate(-100,0)
 </style>
 
