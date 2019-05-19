@@ -85,6 +85,12 @@ export default {
           window.localStorage.setItem("token", result.token);
          //  alert("登陆成功");
          this.$router.replace({path:'/tabbar'});
+         // 判断路由是否带参数，带参数就去到从定向参数地址 否则进入首页
+         if(this.$router.query.redirect){
+           this.$router.replace({path: 'this.$router.query.redirect'})
+         }else{
+           this.$router.replace({path: '/tabbar/index'})
+         }
         } else {
           alert("登录失败");
         }

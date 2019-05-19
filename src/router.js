@@ -54,11 +54,17 @@ export default new Router({
         {
           path: "shopcar",
           name: "shopcar",
+          meta:{
+            requireAuth:true, // 需要登录权限
+          },
           component: () => import(/* webpackChunkName: "about" */ "./views/Shopcar.vue")
         },
         {
           path: "my",
           name: "my",
+          meta:{
+            requireAuth:true, // 需要登录权限
+          },
           component: () => import(/* webpackChunkName: "about" */ "./views/my.vue")
         },
       ]

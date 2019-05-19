@@ -1,6 +1,6 @@
 <template>
   <div>
-    <transition :name="transitionName" >
+    <transition :name="transitionName">
       <router-view class="Router"/>
     </transition>
     <cube-tab-bar
@@ -67,29 +67,55 @@ export default {
           break;
       }
       // if you clicked different tab, this methods can be emitted
+    },
+    created() {
+      switch (this.$router.path) {
+        case "/tabbar/index":
+          this.selectedLabelDefault = "首页";
+          break;
+        case "/tabbar/list":
+          this.selectedLabelDefault = "分类";
+          break;
+        case "/tabbar/search":
+          this.selectedLabelDefault = "搜索";
+          break;
+        case "/tabbar/shopcar":
+          this.selectedLabelDefault = "购物车";
+          break;
+        case "/tabbar/my":
+          this.selectedLabelDefault = "我的";
+          break;
+      }
     }
   }
 };
 </script>
 <style lang="stylus" scoped>
-  .bottom-bar
-    position: fixed
-    bottom: 0
-    left: 0
-    z-index: 1000
-    width: 100%
-    background: #fff
-  .Router
-    position absolute
-    width 100%
-    transition all 0.8s ease
-  .silde-left-enter, .silde-right-leave-active
-    opacity 0
-    -webkit-transform translate(100%,0)
-    transform translate(100%,0)
-  .silde-left-leave-active, silde-right-enter
-    opacity 0
-    -webkit-transform translate(-100%,0)
-    transform translate(-100,0)
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+}
+
+.Router {
+  position: absolute;
+  width: 100%;
+  transition: all 0.8s ease;
+}
+
+.silde-left-enter, .silde-right-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+
+.silde-left-leave-active, silde-right-enter {
+  opacity: 0;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100, 0);
+}
 </style>
 
